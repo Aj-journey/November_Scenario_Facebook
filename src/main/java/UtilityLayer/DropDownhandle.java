@@ -1,0 +1,15 @@
+package UtilityLayer;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+import BaseLayer.BaseClass;
+
+public class DropDownhandle extends BaseClass{
+
+	public static void handleDropDown(WebElement wb,String value)
+	{
+		Select sel = new Select(wb);
+		sel.selectByVisibleText(value);
+	}
+}
